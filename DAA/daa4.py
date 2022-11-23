@@ -1,5 +1,5 @@
 global N
-N = 4
+N = 8
 cols = set([i for i in range(N)])
 
 
