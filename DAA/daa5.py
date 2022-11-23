@@ -1,3 +1,5 @@
+#O(nlogn)
+
 import random
 
 

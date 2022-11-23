@@ -1,3 +1,6 @@
+#O(n) - TC O(1) - SC
+
+
 def fibo_recursive(n):
     if n == 1:
         return 0

@@ -1,3 +1,5 @@
+# TC - O(nlogn)
+
 # A Huffman Tree Node
 import heapq
 # used for implementing priority queue

@@ -1,3 +1,5 @@
+# TC - O(2^n)
+
 def knapSack(W, wt, val, n):
     
 	## A matrix of (W+1) columns and (n+1) rows
