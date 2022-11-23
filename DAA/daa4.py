@@ -1,6 +1,9 @@
 global N
-N = 8
+N = 4
 cols = set([i for i in range(N)])
+print(cols) # {0, 1, 2, 3}
+
+# if user enters 0 1 then 1 will be removed from this set = {0,2,3} = cols
 
 
 def printSolution(board):
@@ -42,9 +45,14 @@ def isSafe(board, row, col):
 
 
 def solveNQUtil(board):
+
+    # if no column in cols left
     if not cols:
         return True
+
+    # set cols --> list cols[0]
     col = list(cols)[0]
+    print(col)
     for i in range(N):
         if isSafe(board, i, col):
             board[i][col] = 1
@@ -67,6 +75,7 @@ def solveNQ():
     i, j = int(i), int(j)
     board[i][j] = 1
     cols.remove(j)
+    
     if solveNQUtil(board) == False:
         print("Solution does not exist")
         return False
